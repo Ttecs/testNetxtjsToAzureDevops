@@ -20,7 +20,6 @@ steps:
     npm run build
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    PathtoPublish: 'tharakabandara'
     ArtifactName: 'drop'
-    publishLocation: 'tharakabandara'
-  displayName: 'npm install and build'
+    publishLocation: 'Container'
